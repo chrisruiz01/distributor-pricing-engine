@@ -4,8 +4,9 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 from data_access import load_transactions
-
 from utils import format_currency, format_pct
+from pricing_logic import recommend_action, product_action, infer_wtp_signal
+
 
 st.set_page_config(
     page_title="Distributor Pricing Engine",
@@ -437,19 +438,6 @@ with st.expander("Scenario interpretation and risk note"):
 
 st.markdown("#### Top Scenario Opportunities")
 
-
-def recommend_action(row) -> str:
-    if row["positive_gap_to_peer"] >= 0.06 and row["exception_rate"] >= 0.20:
-        return "Review discount behavior; tighten overrides"
-    if row["positive_gap_to_peer"] >= 0.05 and row["revenue"] >= 25_000:
-        return "Targeted price increase candidate"
-    if row["exception_rate"] >= 0.25:
-        return "Audit exception pattern"
-    if row["positive_gap_to_peer"] >= 0.03:
-        return "Move toward peer floor"
-    return "Monitor"
-
-
 eligible["recommended_action"] = eligible.apply(recommend_action, axis=1)
 
 scenario_display = eligible.sort_values(
@@ -673,17 +661,6 @@ product_opportunity["discount_drag_pct"] = (
     + product_opportunity["avg_override_discount"]
 )
 
-def product_action(row) -> str:
-    if row["pocket_margin_pct"] < 0.12 and row["exception_rate"] > 0.18:
-        return "Review price floor and override policy"
-    if row["pocket_margin_pct"] < 0.15:
-        return "Evaluate price increase opportunity"
-    if row["exception_rate"] > 0.22:
-        return "Audit exception activity"
-    if row["avg_override_discount"] > 0.025:
-        return "Tighten override guidance"
-    return "Monitor"
-
 product_opportunity["recommended_action"] = product_opportunity.apply(product_action, axis=1)
 
 product_display = product_opportunity.sort_values(
@@ -743,17 +720,6 @@ context_summary = (
 context_summary["pocket_margin_pct"] = (
     context_summary["pocket_margin"] / context_summary["revenue"]
 )
-
-def infer_wtp_signal(row) -> str:
-    if row["service_model"] == "Emergency Repair" and row["pocket_margin_pct"] < 0.18:
-        return "Potential under-capture: urgent context"
-    if row["service_model"] == "Routine Replenishment" and row["exception_rate"] > 0.20:
-        return "Likely competitive / price-sensitive context"
-    if row["customer_type"] == "National Account" and row["exception_rate"] > 0.20:
-        return "Governance review: high exception account type"
-    if row["pocket_margin_pct"] >= 0.22:
-        return "Strong realization"
-    return "Monitor"
 
 context_summary["wtp_signal"] = context_summary.apply(infer_wtp_signal, axis=1)
 
