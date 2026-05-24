@@ -22,6 +22,12 @@ The current Streamlit app includes:
 - Buyer context and willingness-to-pay signal analysis
 - Service model margin visualization 
 
+## Project Summary
+
+A concise business-facing explanation of the pricing problem, app capabilities, pricing logic, buyer context signals, and interview positioning is available here: 
+
+[Project Summary](docs/project-summary.md)
+
 ## Pricing Questions This Project Answers
 
 - Where are we leaking margin?
