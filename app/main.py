@@ -5,6 +5,7 @@ import plotly.graph_objects as go
 
 from data_access import load_transactions
 
+from utils import format_currency, format_pct
 
 st.set_page_config(
     page_title="Distributor Pricing Engine",
@@ -15,15 +16,6 @@ st.set_page_config(
 @st.cache_data
 def get_data() -> pd.DataFrame:
     return load_transactions()
-
-
-def format_currency(value: float) -> str:
-    return f"${value:,.0f}"
-
-
-def format_pct(value: float) -> str:
-    return f"{value:.1%}"
-
 
 df = get_data()
 
