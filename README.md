@@ -18,7 +18,7 @@ The current Streamlit app includes:
 - Exportable scenario recommendation list
 - Price realization waterfall from list revenue to pocket margin
 - Waterfall explanation for business users
-- Product categorypricing opportunity table
+- Product category pricing opportunity table
 - Buyer context and willingness-to-pay signal analysis
 - Service model margin visualization 
 
