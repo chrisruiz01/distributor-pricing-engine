@@ -26,7 +26,7 @@ max_date = df["invoice_date"].max().date()
 st.title("Distributor Price Realization & Margin Leakage Engine")
 st.caption("Synthetic B2B distributor pricing analytics MVP")
 
-with st.expander("MVP project scope"):
+with st.expander("MVP Project Scope"):
     st.markdown(
         """
         This app simulates strategic pricing work for a B2B distributor.
