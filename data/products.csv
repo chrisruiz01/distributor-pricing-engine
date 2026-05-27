@@ -1,0 +1,301 @@
+sku,product_category,unit_cost,list_price,criticality
+SKU00001,Heavy Equipment,754.94,966.32,Medium
+SKU00002,OEM Specialty Part,89.3,165.21,High
+SKU00003,OEM Specialty Part,246.64,456.28,High
+SKU00004,Accessory,121.46,206.48,Medium
+SKU00005,Commodity Part,68.6,92.61,Low
+SKU00006,OEM Specialty Part,207.78,384.39,High
+SKU00007,Accessory,68.49,116.43,Medium
+SKU00008,OEM Specialty Part,147.99,273.78,High
+SKU00009,Commodity Part,54.23,73.21,Low
+SKU00010,Commodity Part,54.13,73.08,Low
+SKU00011,Consumable,23.31,36.13,Medium
+SKU00012,Consumable,2.28,3.53,Medium
+SKU00013,OEM Specialty Part,243.34,450.18,High
+SKU00014,OEM Specialty Part,109.27,202.15,High
+SKU00015,Commodity Part,8.72,11.77,Low
+SKU00016,OEM Specialty Part,172.21,318.59,High
+SKU00017,Commodity Part,43.71,59.01,Low
+SKU00018,Consumable,25.05,38.83,Medium
+SKU00019,Accessory,120.39,204.66,Medium
+SKU00020,Commodity Part,12.11,16.35,Low
+SKU00021,Commodity Part,68.72,92.77,Low
+SKU00022,Consumable,30.24,46.87,Medium
+SKU00023,Commodity Part,21.91,29.58,Low
+SKU00024,Consumable,23.92,37.08,Medium
+SKU00025,Consumable,36.69,56.87,Medium
+SKU00026,OEM Specialty Part,126.97,234.89,High
+SKU00027,OEM Specialty Part,184.77,341.82,High
+SKU00028,Accessory,112.99,192.08,Medium
+SKU00029,OEM Specialty Part,212.68,393.46,High
+SKU00030,Commodity Part,38.94,52.57,Low
+SKU00031,Commodity Part,48.95,66.08,Low
+SKU00032,Commodity Part,43.44,58.64,Low
+SKU00033,OEM Specialty Part,133.11,246.25,High
+SKU00034,Commodity Part,19.19,25.91,Low
+SKU00035,Commodity Part,35.86,48.41,Low
+SKU00036,OEM Specialty Part,122.4,226.44,High
+SKU00037,Commodity Part,19.85,26.8,Low
+SKU00038,Commodity Part,7.23,9.76,Low
+SKU00039,Commodity Part,40.1,54.14,Low
+SKU00040,Commodity Part,46.38,62.61,Low
+SKU00041,Commodity Part,69.56,93.91,Low
+SKU00042,OEM Specialty Part,156.02,288.64,High
+SKU00043,Commodity Part,32.13,43.38,Low
+SKU00044,OEM Specialty Part,35.48,65.64,High
+SKU00045,Commodity Part,11.14,15.04,Low
+SKU00046,OEM Specialty Part,88.98,164.61,High
+SKU00047,Commodity Part,35.23,47.56,Low
+SKU00048,Consumable,8.5,13.18,Medium
+SKU00049,OEM Specialty Part,221.23,409.28,High
+SKU00050,OEM Specialty Part,40.17,74.31,High
+SKU00051,Commodity Part,46.33,62.55,Low
+SKU00052,Commodity Part,53.61,72.37,Low
+SKU00053,Heavy Equipment,1431.45,1832.26,Medium
+SKU00054,OEM Specialty Part,156.41,289.36,High
+SKU00055,OEM Specialty Part,199.94,369.89,High
+SKU00056,Accessory,119.78,203.63,Medium
+SKU00057,Commodity Part,17.52,23.65,Low
+SKU00058,Commodity Part,55.96,75.55,Low
+SKU00059,Accessory,137.73,234.14,Medium
+SKU00060,Accessory,23.12,39.3,Medium
+SKU00061,Consumable,15.13,23.45,Medium
+SKU00062,Commodity Part,66.52,89.8,Low
+SKU00063,OEM Specialty Part,83.62,154.7,High
+SKU00064,OEM Specialty Part,75.83,140.29,High
+SKU00065,Commodity Part,68.9,93.02,Low
+SKU00066,Heavy Equipment,2592.19,3318.0,Medium
+SKU00067,Commodity Part,31.04,41.9,Low
+SKU00068,Consumable,37.79,58.57,Medium
+SKU00069,Accessory,127.09,216.05,Medium
+SKU00070,Commodity Part,44.56,60.16,Low
+SKU00071,OEM Specialty Part,210.34,389.13,High
+SKU00072,Commodity Part,46.42,62.67,Low
+SKU00073,Consumable,23.89,37.03,Medium
+SKU00074,Consumable,13.24,20.52,Medium
+SKU00075,Heavy Equipment,2319.39,2968.82,Medium
+SKU00076,Heavy Equipment,551.58,706.02,Medium
+SKU00077,Accessory,113.41,192.8,Medium
+SKU00078,Heavy Equipment,2913.91,3729.8,Medium
+SKU00079,Heavy Equipment,1048.24,1341.75,Medium
+SKU00080,Commodity Part,26.16,35.32,Low
+SKU00081,Commodity Part,20.45,27.61,Low
+SKU00082,Commodity Part,7.1,9.59,Low
+SKU00083,Consumable,14.95,23.17,Medium
+SKU00084,Heavy Equipment,1784.4,2284.03,Medium
+SKU00085,Accessory,121.06,205.8,Medium
+SKU00086,Commodity Part,61.18,82.59,Low
+SKU00087,Commodity Part,45.19,61.01,Low
+SKU00088,Heavy Equipment,1195.97,1530.84,Medium
+SKU00089,Heavy Equipment,2740.31,3507.6,Medium
+SKU00090,OEM Specialty Part,50.53,93.48,High
+SKU00091,Consumable,31.03,48.1,Medium
+SKU00092,OEM Specialty Part,101.0,186.85,High
+SKU00093,Heavy Equipment,3452.12,4418.71,Medium
+SKU00094,Commodity Part,24.67,33.3,Low
+SKU00095,OEM Specialty Part,100.41,185.76,High
+SKU00096,Consumable,35.23,54.61,Medium
+SKU00097,Heavy Equipment,1288.15,1648.83,Medium
+SKU00098,OEM Specialty Part,227.87,421.56,High
+SKU00099,Accessory,12.97,22.05,Medium
+SKU00100,Accessory,146.72,249.42,Medium
+SKU00101,Commodity Part,63.93,86.31,Low
+SKU00102,Consumable,17.54,27.19,Medium
+SKU00103,Consumable,33.43,51.82,Medium
+SKU00104,OEM Specialty Part,229.22,424.06,High
+SKU00105,Accessory,130.74,222.26,Medium
+SKU00106,OEM Specialty Part,77.18,142.78,High
+SKU00107,OEM Specialty Part,41.78,77.29,High
+SKU00108,Accessory,72.49,123.23,Medium
+SKU00109,Consumable,39.21,60.78,Medium
+SKU00110,Commodity Part,38.14,51.49,Low
+SKU00111,Commodity Part,34.08,46.01,Low
+SKU00112,OEM Specialty Part,116.19,214.95,High
+SKU00113,Commodity Part,47.54,64.18,Low
+SKU00114,Heavy Equipment,3129.9,4006.27,Medium
+SKU00115,Consumable,33.95,52.62,Medium
+SKU00116,Accessory,11.97,20.35,Medium
+SKU00117,Consumable,16.84,26.1,Medium
+SKU00118,Accessory,15.76,26.79,Medium
+SKU00119,Commodity Part,29.54,39.88,Low
+SKU00120,Consumable,6.73,10.43,Medium
+SKU00121,Heavy Equipment,895.77,1146.59,Medium
+SKU00122,Commodity Part,54.17,73.13,Low
+SKU00123,Heavy Equipment,1385.55,1773.5,Medium
+SKU00124,Accessory,52.05,88.48,Medium
+SKU00125,Commodity Part,47.44,64.04,Low
+SKU00126,Commodity Part,37.07,50.04,Low
+SKU00127,Consumable,10.25,15.89,Medium
+SKU00128,Commodity Part,15.2,20.52,Low
+SKU00129,Commodity Part,8.7,11.74,Low
+SKU00130,Consumable,38.58,59.8,Medium
+SKU00131,Consumable,20.77,32.19,Medium
+SKU00132,Heavy Equipment,2014.21,2578.19,Medium
+SKU00133,Commodity Part,41.22,55.65,Low
+SKU00134,OEM Specialty Part,190.52,352.46,High
+SKU00135,OEM Specialty Part,243.1,449.74,High
+SKU00136,Commodity Part,22.44,30.29,Low
+SKU00137,OEM Specialty Part,36.52,67.56,High
+SKU00138,Accessory,84.64,143.89,Medium
+SKU00139,OEM Specialty Part,187.17,346.26,High
+SKU00140,OEM Specialty Part,127.79,236.41,High
+SKU00141,Commodity Part,22.86,30.86,Low
+SKU00142,Heavy Equipment,2080.98,2663.65,Medium
+SKU00143,OEM Specialty Part,194.97,360.69,High
+SKU00144,OEM Specialty Part,132.21,244.59,High
+SKU00145,Consumable,38.77,60.09,Medium
+SKU00146,Heavy Equipment,2296.14,2939.06,Medium
+SKU00147,Consumable,21.61,33.5,Medium
+SKU00148,OEM Specialty Part,53.74,99.42,High
+SKU00149,Accessory,86.72,147.42,Medium
+SKU00150,OEM Specialty Part,55.0,101.75,High
+SKU00151,Heavy Equipment,706.1,903.81,Medium
+SKU00152,Accessory,123.86,210.56,Medium
+SKU00153,OEM Specialty Part,220.98,408.81,High
+SKU00154,OEM Specialty Part,141.82,262.37,High
+SKU00155,Heavy Equipment,1284.39,1644.02,Medium
+SKU00156,Commodity Part,21.95,29.63,Low
+SKU00157,Commodity Part,55.41,74.8,Low
+SKU00158,Heavy Equipment,526.38,673.77,Medium
+SKU00159,Accessory,98.12,166.8,Medium
+SKU00160,Heavy Equipment,1844.96,2361.55,Medium
+SKU00161,Accessory,139.62,237.35,Medium
+SKU00162,Consumable,30.66,47.52,Medium
+SKU00163,Consumable,16.39,25.4,Medium
+SKU00164,Commodity Part,50.67,68.4,Low
+SKU00165,OEM Specialty Part,61.51,113.79,High
+SKU00166,Consumable,4.43,6.87,Medium
+SKU00167,Commodity Part,58.06,78.38,Low
+SKU00168,Accessory,95.43,162.23,Medium
+SKU00169,OEM Specialty Part,106.68,197.36,High
+SKU00170,OEM Specialty Part,183.68,339.81,High
+SKU00171,Commodity Part,66.66,89.99,Low
+SKU00172,Commodity Part,19.01,25.66,Low
+SKU00173,OEM Specialty Part,141.35,261.5,High
+SKU00174,Consumable,6.01,9.32,Medium
+SKU00175,Commodity Part,25.65,34.63,Low
+SKU00176,OEM Specialty Part,93.55,173.07,High
+SKU00177,OEM Specialty Part,153.52,284.01,High
+SKU00178,OEM Specialty Part,211.96,392.13,High
+SKU00179,Commodity Part,9.59,12.95,Low
+SKU00180,Accessory,54.0,91.8,Medium
+SKU00181,Heavy Equipment,799.63,1023.53,Medium
+SKU00182,Commodity Part,10.68,14.42,Low
+SKU00183,Accessory,67.32,114.44,Medium
+SKU00184,Commodity Part,22.79,30.77,Low
+SKU00185,OEM Specialty Part,220.29,407.54,High
+SKU00186,Commodity Part,38.87,52.47,Low
+SKU00187,OEM Specialty Part,98.93,183.02,High
+SKU00188,OEM Specialty Part,144.31,266.97,High
+SKU00189,OEM Specialty Part,101.31,187.42,High
+SKU00190,OEM Specialty Part,207.15,383.23,High
+SKU00191,Commodity Part,7.5,10.12,Low
+SKU00192,Commodity Part,48.22,65.1,Low
+SKU00193,Consumable,2.81,4.36,Medium
+SKU00194,Commodity Part,34.22,46.2,Low
+SKU00195,Accessory,82.66,140.52,Medium
+SKU00196,Consumable,6.33,9.81,Medium
+SKU00197,Commodity Part,60.62,81.84,Low
+SKU00198,OEM Specialty Part,130.64,241.68,High
+SKU00199,OEM Specialty Part,202.59,374.79,High
+SKU00200,Accessory,49.24,83.71,Medium
+SKU00201,Heavy Equipment,1933.48,2474.85,Medium
+SKU00202,Commodity Part,14.98,20.22,Low
+SKU00203,Accessory,103.17,175.39,Medium
+SKU00204,OEM Specialty Part,68.2,126.17,High
+SKU00205,Consumable,23.61,36.6,Medium
+SKU00206,Accessory,101.48,172.52,Medium
+SKU00207,Commodity Part,34.43,46.48,Low
+SKU00208,Heavy Equipment,2982.0,3816.96,Medium
+SKU00209,Commodity Part,74.36,100.39,Low
+SKU00210,Commodity Part,58.48,78.95,Low
+SKU00211,Commodity Part,16.19,21.86,Low
+SKU00212,OEM Specialty Part,66.78,123.54,High
+SKU00213,Heavy Equipment,1221.17,1563.1,Medium
+SKU00214,Consumable,15.77,24.44,Medium
+SKU00215,Commodity Part,52.34,70.66,Low
+SKU00216,OEM Specialty Part,232.77,430.62,High
+SKU00217,Heavy Equipment,2387.05,3055.42,Medium
+SKU00218,Commodity Part,74.69,100.83,Low
+SKU00219,OEM Specialty Part,201.04,371.92,High
+SKU00220,Commodity Part,34.69,46.83,Low
+SKU00221,OEM Specialty Part,39.82,73.67,High
+SKU00222,Accessory,135.94,231.1,Medium
+SKU00223,Commodity Part,55.92,75.49,Low
+SKU00224,Accessory,36.23,61.59,Medium
+SKU00225,OEM Specialty Part,74.67,138.14,High
+SKU00226,OEM Specialty Part,122.08,225.85,High
+SKU00227,Accessory,52.36,89.01,Medium
+SKU00228,Commodity Part,37.39,50.48,Low
+SKU00229,Accessory,115.81,196.88,Medium
+SKU00230,OEM Specialty Part,115.22,213.16,High
+SKU00231,OEM Specialty Part,95.64,176.93,High
+SKU00232,Consumable,6.84,10.6,Medium
+SKU00233,OEM Specialty Part,149.2,276.02,High
+SKU00234,Commodity Part,24.63,33.25,Low
+SKU00235,OEM Specialty Part,62.68,115.96,High
+SKU00236,Commodity Part,23.71,32.01,Low
+SKU00237,OEM Specialty Part,74.97,138.69,High
+SKU00238,Heavy Equipment,2562.41,3279.88,Medium
+SKU00239,OEM Specialty Part,135.66,250.97,High
+SKU00240,Commodity Part,20.73,27.99,Low
+SKU00241,Commodity Part,72.72,98.17,Low
+SKU00242,Consumable,33.66,52.17,Medium
+SKU00243,Consumable,22.55,34.95,Medium
+SKU00244,Commodity Part,59.86,80.81,Low
+SKU00245,Accessory,127.93,217.48,Medium
+SKU00246,Commodity Part,20.58,27.78,Low
+SKU00247,OEM Specialty Part,204.8,378.88,High
+SKU00248,OEM Specialty Part,160.97,297.79,High
+SKU00249,OEM Specialty Part,52.56,97.24,High
+SKU00250,Commodity Part,10.36,13.99,Low
+SKU00251,Commodity Part,57.83,78.07,Low
+SKU00252,Commodity Part,26.53,35.82,Low
+SKU00253,Commodity Part,65.16,87.97,Low
+SKU00254,Commodity Part,53.37,72.05,Low
+SKU00255,OEM Specialty Part,232.78,430.64,High
+SKU00256,Consumable,22.76,35.28,Medium
+SKU00257,Commodity Part,71.54,96.58,Low
+SKU00258,OEM Specialty Part,38.11,70.5,High
+SKU00259,Commodity Part,53.17,71.78,Low
+SKU00260,Commodity Part,30.04,40.55,Low
+SKU00261,Heavy Equipment,1948.94,2494.64,Medium
+SKU00262,Accessory,86.96,147.83,Medium
+SKU00263,Commodity Part,50.5,68.18,Low
+SKU00264,OEM Specialty Part,68.66,127.02,High
+SKU00265,Consumable,20.92,32.43,Medium
+SKU00266,Heavy Equipment,2615.34,3347.64,Medium
+SKU00267,OEM Specialty Part,71.55,132.37,High
+SKU00268,OEM Specialty Part,48.07,88.93,High
+SKU00269,Commodity Part,62.75,84.71,Low
+SKU00270,Heavy Equipment,1469.21,1880.59,Medium
+SKU00271,Consumable,11.13,17.25,Medium
+SKU00272,OEM Specialty Part,94.37,174.58,High
+SKU00273,Accessory,140.44,238.75,Medium
+SKU00274,Consumable,26.22,40.64,Medium
+SKU00275,Commodity Part,70.18,94.74,Low
+SKU00276,Accessory,121.62,206.75,Medium
+SKU00277,OEM Specialty Part,222.16,411.0,High
+SKU00278,Commodity Part,11.19,15.11,Low
+SKU00279,OEM Specialty Part,59.11,109.35,High
+SKU00280,Commodity Part,68.06,91.88,Low
+SKU00281,OEM Specialty Part,189.07,349.78,High
+SKU00282,Accessory,118.69,201.77,Medium
+SKU00283,Commodity Part,42.04,56.75,Low
+SKU00284,Accessory,48.45,82.37,Medium
+SKU00285,Commodity Part,36.02,48.63,Low
+SKU00286,Commodity Part,72.1,97.33,Low
+SKU00287,Commodity Part,64.06,86.48,Low
+SKU00288,OEM Specialty Part,111.76,206.76,High
+SKU00289,Accessory,81.38,138.35,Medium
+SKU00290,Consumable,25.78,39.96,Medium
+SKU00291,OEM Specialty Part,145.61,269.38,High
+SKU00292,OEM Specialty Part,115.15,213.03,High
+SKU00293,OEM Specialty Part,157.05,290.54,High
+SKU00294,OEM Specialty Part,160.63,297.17,High
+SKU00295,Commodity Part,34.93,47.16,Low
+SKU00296,Accessory,24.33,41.36,Medium
+SKU00297,Commodity Part,51.4,69.39,Low
+SKU00298,Commodity Part,64.4,86.94,Low
+SKU00299,Consumable,8.57,13.28,Medium
+SKU00300,Consumable,26.0,40.3,Medium

@@ -1,0 +1,501 @@
+customer_id,industry,region,customer_type,service_model,annual_revenue_band
+C0001,HVAC Contractor,Northeast,Regional Chain,Emergency Repair,Mid-Market
+C0002,Commercial Kitchen Repair,Southwest,Regional Chain,Routine Replenishment,Mid-Market
+C0003,Commercial Kitchen Repair,West,Regional Chain,Emergency Repair,Mid-Market
+C0004,Plumbing Contractor,West,Local Independent,Emergency Repair,Small
+C0005,Plumbing Contractor,Southeast,Local Independent,Routine Replenishment,Small
+C0006,Pool/Spa Service,Midwest,Regional Chain,Routine Replenishment,Mid-Market
+C0007,HVAC Contractor,Midwest,Local Independent,Mixed,Small
+C0008,Commercial Kitchen Repair,Southeast,Regional Chain,Routine Replenishment,Mid-Market
+C0009,Appliance Repair,Southeast,Local Independent,Mixed,Small
+C0010,HVAC Contractor,Southeast,Local Independent,Routine Replenishment,Small
+C0011,Plumbing Contractor,West,Local Independent,Mixed,Small
+C0012,Pool/Spa Service,Southwest,Regional Chain,Routine Replenishment,Mid-Market
+C0013,Commercial Kitchen Repair,West,Local Independent,Routine Replenishment,Small
+C0014,Commercial Kitchen Repair,West,Local Independent,Mixed,Small
+C0015,Commercial Kitchen Repair,West,Local Independent,Routine Replenishment,Small
+C0016,Commercial Kitchen Repair,Northeast,Local Independent,Emergency Repair,Small
+C0017,Plumbing Contractor,West,Local Independent,Mixed,Small
+C0018,HVAC Contractor,Northeast,Regional Chain,Mixed,Mid-Market
+C0019,Pool/Spa Service,Midwest,Local Independent,Emergency Repair,Small
+C0020,Plumbing Contractor,Midwest,Regional Chain,Routine Replenishment,Mid-Market
+C0021,Plumbing Contractor,Southeast,Regional Chain,Mixed,Mid-Market
+C0022,Appliance Repair,Northeast,Local Independent,Mixed,Small
+C0023,HVAC Contractor,Northeast,Local Independent,Mixed,Small
+C0024,Pool/Spa Service,West,Local Independent,Routine Replenishment,Small
+C0025,Commercial Kitchen Repair,Southeast,Local Independent,Mixed,Small
+C0026,Commercial Kitchen Repair,Southeast,Local Independent,Routine Replenishment,Small
+C0027,Plumbing Contractor,West,National Account,Mixed,Large
+C0028,Pool/Spa Service,Northeast,National Account,Routine Replenishment,Large
+C0029,Plumbing Contractor,West,Regional Chain,Mixed,Mid-Market
+C0030,Plumbing Contractor,West,Local Independent,Routine Replenishment,Small
+C0031,Plumbing Contractor,Midwest,Local Independent,Routine Replenishment,Small
+C0032,Appliance Repair,Northeast,Local Independent,Mixed,Small
+C0033,HVAC Contractor,Northeast,Local Independent,Routine Replenishment,Small
+C0034,Plumbing Contractor,Southeast,Local Independent,Mixed,Small
+C0035,Pool/Spa Service,Midwest,Local Independent,Routine Replenishment,Small
+C0036,HVAC Contractor,Northeast,Local Independent,Routine Replenishment,Small
+C0037,Pool/Spa Service,Midwest,Local Independent,Routine Replenishment,Small
+C0038,Pool/Spa Service,Northeast,Local Independent,Routine Replenishment,Small
+C0039,Appliance Repair,Midwest,Local Independent,Routine Replenishment,Small
+C0040,Commercial Kitchen Repair,Northeast,Regional Chain,Emergency Repair,Mid-Market
+C0041,HVAC Contractor,Southwest,National Account,Emergency Repair,Large
+C0042,Commercial Kitchen Repair,Northeast,Local Independent,Mixed,Small
+C0043,Commercial Kitchen Repair,Northeast,Regional Chain,Mixed,Mid-Market
+C0044,Appliance Repair,Northeast,National Account,Mixed,Large
+C0045,HVAC Contractor,West,Local Independent,Emergency Repair,Small
+C0046,Pool/Spa Service,Northeast,Local Independent,Routine Replenishment,Small
+C0047,Plumbing Contractor,Midwest,Local Independent,Emergency Repair,Small
+C0048,Pool/Spa Service,Midwest,Local Independent,Mixed,Small
+C0049,Commercial Kitchen Repair,Midwest,Regional Chain,Mixed,Mid-Market
+C0050,Commercial Kitchen Repair,Southwest,Local Independent,Emergency Repair,Small
+C0051,Commercial Kitchen Repair,West,Local Independent,Mixed,Small
+C0052,HVAC Contractor,Southeast,Local Independent,Emergency Repair,Small
+C0053,Appliance Repair,West,Local Independent,Emergency Repair,Small
+C0054,Plumbing Contractor,Southeast,Regional Chain,Emergency Repair,Mid-Market
+C0055,Plumbing Contractor,West,Local Independent,Emergency Repair,Small
+C0056,HVAC Contractor,Midwest,Local Independent,Mixed,Small
+C0057,Plumbing Contractor,Southwest,Local Independent,Mixed,Small
+C0058,HVAC Contractor,West,Local Independent,Emergency Repair,Small
+C0059,Commercial Kitchen Repair,Southwest,Local Independent,Routine Replenishment,Small
+C0060,Commercial Kitchen Repair,West,Local Independent,Mixed,Small
+C0061,Pool/Spa Service,Midwest,Local Independent,Mixed,Small
+C0062,Commercial Kitchen Repair,Northeast,Local Independent,Routine Replenishment,Small
+C0063,Appliance Repair,Midwest,Regional Chain,Emergency Repair,Mid-Market
+C0064,Pool/Spa Service,Northeast,Local Independent,Routine Replenishment,Small
+C0065,Plumbing Contractor,West,Local Independent,Routine Replenishment,Small
+C0066,Appliance Repair,Southeast,Local Independent,Mixed,Small
+C0067,Pool/Spa Service,Southeast,Regional Chain,Routine Replenishment,Mid-Market
+C0068,Appliance Repair,Southeast,Local Independent,Mixed,Small
+C0069,HVAC Contractor,Southwest,Local Independent,Emergency Repair,Small
+C0070,Plumbing Contractor,Midwest,Local Independent,Routine Replenishment,Small
+C0071,Commercial Kitchen Repair,West,Local Independent,Mixed,Small
+C0072,HVAC Contractor,Midwest,Regional Chain,Routine Replenishment,Mid-Market
+C0073,Plumbing Contractor,Southeast,Local Independent,Routine Replenishment,Small
+C0074,HVAC Contractor,Northeast,Regional Chain,Mixed,Mid-Market
+C0075,Commercial Kitchen Repair,Northeast,Regional Chain,Mixed,Mid-Market
+C0076,Plumbing Contractor,Southeast,Local Independent,Routine Replenishment,Small
+C0077,Appliance Repair,West,Regional Chain,Routine Replenishment,Mid-Market
+C0078,Appliance Repair,Midwest,Local Independent,Routine Replenishment,Small
+C0079,Plumbing Contractor,West,Regional Chain,Routine Replenishment,Mid-Market
+C0080,Commercial Kitchen Repair,Northeast,Local Independent,Routine Replenishment,Small
+C0081,Pool/Spa Service,Northeast,Local Independent,Emergency Repair,Small
+C0082,Plumbing Contractor,West,Local Independent,Mixed,Small
+C0083,HVAC Contractor,Northeast,Local Independent,Mixed,Small
+C0084,Pool/Spa Service,Northeast,Local Independent,Mixed,Small
+C0085,Commercial Kitchen Repair,Midwest,Regional Chain,Mixed,Mid-Market
+C0086,Commercial Kitchen Repair,West,Local Independent,Mixed,Small
+C0087,HVAC Contractor,Southwest,Local Independent,Mixed,Small
+C0088,Appliance Repair,Northeast,Local Independent,Mixed,Small
+C0089,Commercial Kitchen Repair,West,Local Independent,Routine Replenishment,Small
+C0090,Pool/Spa Service,West,Local Independent,Routine Replenishment,Small
+C0091,Plumbing Contractor,West,Regional Chain,Emergency Repair,Mid-Market
+C0092,Pool/Spa Service,West,Local Independent,Routine Replenishment,Small
+C0093,Pool/Spa Service,Southeast,Local Independent,Emergency Repair,Small
+C0094,Appliance Repair,West,Local Independent,Emergency Repair,Small
+C0095,Pool/Spa Service,Southeast,Local Independent,Routine Replenishment,Small
+C0096,Appliance Repair,West,Local Independent,Routine Replenishment,Small
+C0097,Appliance Repair,Midwest,Local Independent,Emergency Repair,Small
+C0098,Commercial Kitchen Repair,Southwest,Local Independent,Mixed,Small
+C0099,Commercial Kitchen Repair,Southwest,National Account,Mixed,Large
+C0100,HVAC Contractor,Southwest,Local Independent,Emergency Repair,Small
+C0101,Pool/Spa Service,Southwest,Local Independent,Emergency Repair,Small
+C0102,HVAC Contractor,Southwest,Regional Chain,Routine Replenishment,Mid-Market
+C0103,Pool/Spa Service,Southwest,Regional Chain,Mixed,Mid-Market
+C0104,HVAC Contractor,Northeast,Regional Chain,Mixed,Mid-Market
+C0105,Commercial Kitchen Repair,West,National Account,Emergency Repair,Large
+C0106,Commercial Kitchen Repair,Midwest,Regional Chain,Mixed,Mid-Market
+C0107,Commercial Kitchen Repair,Southeast,Regional Chain,Emergency Repair,Mid-Market
+C0108,Commercial Kitchen Repair,Midwest,Local Independent,Routine Replenishment,Small
+C0109,Plumbing Contractor,West,Regional Chain,Mixed,Mid-Market
+C0110,Commercial Kitchen Repair,West,Local Independent,Emergency Repair,Small
+C0111,Appliance Repair,West,Local Independent,Emergency Repair,Small
+C0112,Commercial Kitchen Repair,Midwest,Local Independent,Routine Replenishment,Small
+C0113,Plumbing Contractor,Southwest,National Account,Routine Replenishment,Large
+C0114,Plumbing Contractor,Southeast,National Account,Mixed,Large
+C0115,Plumbing Contractor,Southwest,Local Independent,Mixed,Small
+C0116,Plumbing Contractor,Southwest,Regional Chain,Emergency Repair,Mid-Market
+C0117,HVAC Contractor,Southeast,Regional Chain,Emergency Repair,Mid-Market
+C0118,HVAC Contractor,Southeast,Local Independent,Mixed,Small
+C0119,Appliance Repair,Northeast,Local Independent,Emergency Repair,Small
+C0120,HVAC Contractor,Northeast,Local Independent,Mixed,Small
+C0121,Plumbing Contractor,Midwest,Regional Chain,Mixed,Mid-Market
+C0122,Commercial Kitchen Repair,Midwest,Local Independent,Emergency Repair,Small
+C0123,Commercial Kitchen Repair,Northeast,National Account,Mixed,Large
+C0124,Plumbing Contractor,Midwest,Local Independent,Emergency Repair,Small
+C0125,Pool/Spa Service,Southwest,National Account,Routine Replenishment,Large
+C0126,Plumbing Contractor,Southeast,Local Independent,Routine Replenishment,Small
+C0127,HVAC Contractor,Southeast,Regional Chain,Routine Replenishment,Mid-Market
+C0128,Commercial Kitchen Repair,Southeast,Local Independent,Mixed,Small
+C0129,Plumbing Contractor,Midwest,Local Independent,Mixed,Small
+C0130,Commercial Kitchen Repair,Southeast,Regional Chain,Mixed,Mid-Market
+C0131,Plumbing Contractor,Southwest,Regional Chain,Mixed,Mid-Market
+C0132,Plumbing Contractor,Southeast,Regional Chain,Routine Replenishment,Mid-Market
+C0133,HVAC Contractor,Midwest,Local Independent,Emergency Repair,Small
+C0134,Plumbing Contractor,Southeast,Local Independent,Mixed,Small
+C0135,Commercial Kitchen Repair,Northeast,Local Independent,Mixed,Small
+C0136,Appliance Repair,Southwest,Local Independent,Routine Replenishment,Small
+C0137,Commercial Kitchen Repair,Southeast,Local Independent,Routine Replenishment,Small
+C0138,HVAC Contractor,Southeast,Local Independent,Routine Replenishment,Small
+C0139,Appliance Repair,Southwest,Regional Chain,Emergency Repair,Mid-Market
+C0140,Plumbing Contractor,West,Regional Chain,Mixed,Mid-Market
+C0141,Pool/Spa Service,Southwest,Regional Chain,Routine Replenishment,Mid-Market
+C0142,Appliance Repair,West,Regional Chain,Mixed,Mid-Market
+C0143,Appliance Repair,West,Local Independent,Mixed,Small
+C0144,Plumbing Contractor,Midwest,Local Independent,Mixed,Small
+C0145,Pool/Spa Service,Southwest,Local Independent,Routine Replenishment,Small
+C0146,Pool/Spa Service,Southeast,Regional Chain,Routine Replenishment,Mid-Market
+C0147,HVAC Contractor,Midwest,Local Independent,Mixed,Small
+C0148,Appliance Repair,Midwest,Local Independent,Mixed,Small
+C0149,Pool/Spa Service,West,Local Independent,Routine Replenishment,Small
+C0150,HVAC Contractor,West,Local Independent,Mixed,Small
+C0151,Pool/Spa Service,Midwest,Local Independent,Emergency Repair,Small
+C0152,Appliance Repair,Southwest,Regional Chain,Mixed,Mid-Market
+C0153,Pool/Spa Service,Southeast,Local Independent,Emergency Repair,Small
+C0154,Appliance Repair,West,Local Independent,Emergency Repair,Small
+C0155,Plumbing Contractor,Midwest,Regional Chain,Routine Replenishment,Mid-Market
+C0156,Commercial Kitchen Repair,Midwest,Local Independent,Emergency Repair,Small
+C0157,HVAC Contractor,Southwest,Regional Chain,Emergency Repair,Mid-Market
+C0158,Plumbing Contractor,Southwest,Local Independent,Emergency Repair,Small
+C0159,Plumbing Contractor,Northeast,Local Independent,Routine Replenishment,Small
+C0160,Commercial Kitchen Repair,Southeast,Local Independent,Mixed,Small
+C0161,Pool/Spa Service,Northeast,Local Independent,Emergency Repair,Small
+C0162,Commercial Kitchen Repair,Southwest,Regional Chain,Mixed,Mid-Market
+C0163,Plumbing Contractor,Northeast,Local Independent,Mixed,Small
+C0164,Plumbing Contractor,Southeast,Local Independent,Emergency Repair,Small
+C0165,Plumbing Contractor,Midwest,Local Independent,Emergency Repair,Small
+C0166,Pool/Spa Service,Southwest,Local Independent,Mixed,Small
+C0167,Appliance Repair,Midwest,Regional Chain,Mixed,Mid-Market
+C0168,HVAC Contractor,West,National Account,Routine Replenishment,Large
+C0169,Appliance Repair,West,Local Independent,Mixed,Small
+C0170,HVAC Contractor,Northeast,Local Independent,Emergency Repair,Small
+C0171,HVAC Contractor,West,Local Independent,Routine Replenishment,Small
+C0172,HVAC Contractor,Southwest,Local Independent,Mixed,Small
+C0173,Commercial Kitchen Repair,Southwest,National Account,Emergency Repair,Large
+C0174,Commercial Kitchen Repair,Northeast,Local Independent,Mixed,Small
+C0175,Commercial Kitchen Repair,Southwest,Local Independent,Routine Replenishment,Small
+C0176,Plumbing Contractor,Southwest,Local Independent,Mixed,Small
+C0177,Commercial Kitchen Repair,Midwest,Regional Chain,Routine Replenishment,Mid-Market
+C0178,HVAC Contractor,Northeast,Local Independent,Routine Replenishment,Small
+C0179,Pool/Spa Service,Midwest,Local Independent,Emergency Repair,Small
+C0180,Plumbing Contractor,West,Local Independent,Emergency Repair,Small
+C0181,Pool/Spa Service,Southwest,Local Independent,Mixed,Small
+C0182,HVAC Contractor,Northeast,Local Independent,Emergency Repair,Small
+C0183,Plumbing Contractor,West,Local Independent,Emergency Repair,Small
+C0184,Commercial Kitchen Repair,West,Local Independent,Emergency Repair,Small
+C0185,Plumbing Contractor,Northeast,Local Independent,Emergency Repair,Small
+C0186,Plumbing Contractor,West,Local Independent,Mixed,Small
+C0187,HVAC Contractor,Midwest,Local Independent,Routine Replenishment,Small
+C0188,Appliance Repair,Midwest,National Account,Mixed,Large
+C0189,Appliance Repair,Midwest,Regional Chain,Emergency Repair,Mid-Market
+C0190,Appliance Repair,Southwest,Local Independent,Mixed,Small
+C0191,Commercial Kitchen Repair,West,Local Independent,Routine Replenishment,Small
+C0192,Commercial Kitchen Repair,Southwest,Regional Chain,Routine Replenishment,Mid-Market
+C0193,Commercial Kitchen Repair,West,Local Independent,Mixed,Small
+C0194,Appliance Repair,West,Local Independent,Mixed,Small
+C0195,Pool/Spa Service,Northeast,Regional Chain,Mixed,Mid-Market
+C0196,HVAC Contractor,Southeast,Local Independent,Emergency Repair,Small
+C0197,Appliance Repair,Southwest,Regional Chain,Emergency Repair,Mid-Market
+C0198,HVAC Contractor,Midwest,Local Independent,Mixed,Small
+C0199,Appliance Repair,Northeast,Local Independent,Emergency Repair,Small
+C0200,Pool/Spa Service,Northeast,Local Independent,Mixed,Small
+C0201,Appliance Repair,Midwest,Local Independent,Routine Replenishment,Small
+C0202,Pool/Spa Service,Southwest,Local Independent,Routine Replenishment,Small
+C0203,Plumbing Contractor,Northeast,Local Independent,Mixed,Small
+C0204,Commercial Kitchen Repair,Northeast,Regional Chain,Mixed,Mid-Market
+C0205,Plumbing Contractor,Northeast,Local Independent,Emergency Repair,Small
+C0206,Appliance Repair,Midwest,Local Independent,Emergency Repair,Small
+C0207,Commercial Kitchen Repair,Northeast,Regional Chain,Routine Replenishment,Mid-Market
+C0208,Pool/Spa Service,Midwest,Regional Chain,Routine Replenishment,Mid-Market
+C0209,Appliance Repair,Midwest,Local Independent,Emergency Repair,Small
+C0210,Commercial Kitchen Repair,Midwest,Local Independent,Routine Replenishment,Small
+C0211,Appliance Repair,Southwest,National Account,Mixed,Large
+C0212,Commercial Kitchen Repair,Midwest,Local Independent,Mixed,Small
+C0213,Commercial Kitchen Repair,Southwest,Regional Chain,Routine Replenishment,Mid-Market
+C0214,Plumbing Contractor,Southwest,Regional Chain,Routine Replenishment,Mid-Market
+C0215,Commercial Kitchen Repair,West,Regional Chain,Emergency Repair,Mid-Market
+C0216,Appliance Repair,Southwest,Local Independent,Routine Replenishment,Small
+C0217,HVAC Contractor,Midwest,Local Independent,Routine Replenishment,Small
+C0218,HVAC Contractor,Midwest,Local Independent,Routine Replenishment,Small
+C0219,Plumbing Contractor,Southeast,Local Independent,Mixed,Small
+C0220,Pool/Spa Service,Midwest,National Account,Emergency Repair,Large
+C0221,HVAC Contractor,Northeast,Local Independent,Emergency Repair,Small
+C0222,Plumbing Contractor,West,Local Independent,Emergency Repair,Small
+C0223,Commercial Kitchen Repair,West,Local Independent,Mixed,Small
+C0224,Appliance Repair,Northeast,National Account,Routine Replenishment,Large
+C0225,Commercial Kitchen Repair,Southwest,Local Independent,Emergency Repair,Small
+C0226,Appliance Repair,Northeast,Local Independent,Mixed,Small
+C0227,Pool/Spa Service,Southwest,Local Independent,Routine Replenishment,Small
+C0228,Plumbing Contractor,Northeast,Local Independent,Routine Replenishment,Small
+C0229,Plumbing Contractor,Midwest,Local Independent,Mixed,Small
+C0230,HVAC Contractor,Southwest,Local Independent,Emergency Repair,Small
+C0231,Plumbing Contractor,Southwest,Local Independent,Emergency Repair,Small
+C0232,Pool/Spa Service,Midwest,Local Independent,Routine Replenishment,Small
+C0233,HVAC Contractor,West,Local Independent,Emergency Repair,Small
+C0234,Commercial Kitchen Repair,Southwest,Local Independent,Mixed,Small
+C0235,Plumbing Contractor,Southeast,Local Independent,Emergency Repair,Small
+C0236,Commercial Kitchen Repair,Southwest,Local Independent,Emergency Repair,Small
+C0237,Commercial Kitchen Repair,Southwest,Local Independent,Emergency Repair,Small
+C0238,Plumbing Contractor,Southeast,Local Independent,Routine Replenishment,Small
+C0239,Appliance Repair,Southwest,Local Independent,Emergency Repair,Small
+C0240,Commercial Kitchen Repair,West,Local Independent,Emergency Repair,Small
+C0241,HVAC Contractor,West,Local Independent,Mixed,Small
+C0242,Plumbing Contractor,Southwest,Local Independent,Routine Replenishment,Small
+C0243,HVAC Contractor,Southwest,Regional Chain,Routine Replenishment,Mid-Market
+C0244,Commercial Kitchen Repair,Southeast,Local Independent,Emergency Repair,Small
+C0245,Commercial Kitchen Repair,Southwest,Local Independent,Routine Replenishment,Small
+C0246,HVAC Contractor,Southeast,Local Independent,Emergency Repair,Small
+C0247,Commercial Kitchen Repair,Midwest,Local Independent,Routine Replenishment,Small
+C0248,Plumbing Contractor,Southeast,Local Independent,Emergency Repair,Small
+C0249,Commercial Kitchen Repair,Southeast,Regional Chain,Mixed,Mid-Market
+C0250,HVAC Contractor,Northeast,Regional Chain,Mixed,Mid-Market
+C0251,HVAC Contractor,West,Local Independent,Emergency Repair,Small
+C0252,Plumbing Contractor,Northeast,Local Independent,Emergency Repair,Small
+C0253,HVAC Contractor,Northeast,Local Independent,Emergency Repair,Small
+C0254,Appliance Repair,West,Local Independent,Routine Replenishment,Small
+C0255,Commercial Kitchen Repair,Midwest,Local Independent,Emergency Repair,Small
+C0256,HVAC Contractor,Midwest,Local Independent,Mixed,Small
+C0257,Commercial Kitchen Repair,Southwest,Local Independent,Mixed,Small
+C0258,HVAC Contractor,Southeast,Regional Chain,Mixed,Mid-Market
+C0259,HVAC Contractor,Northeast,Local Independent,Routine Replenishment,Small
+C0260,Plumbing Contractor,Southwest,Local Independent,Mixed,Small
+C0261,Commercial Kitchen Repair,Northeast,Local Independent,Emergency Repair,Small
+C0262,HVAC Contractor,Midwest,Local Independent,Routine Replenishment,Small
+C0263,Appliance Repair,West,Local Independent,Routine Replenishment,Small
+C0264,Pool/Spa Service,West,Local Independent,Mixed,Small
+C0265,Pool/Spa Service,Southeast,Regional Chain,Routine Replenishment,Mid-Market
+C0266,Plumbing Contractor,Southwest,Local Independent,Mixed,Small
+C0267,Plumbing Contractor,Southwest,Local Independent,Emergency Repair,Small
+C0268,Appliance Repair,Midwest,Local Independent,Mixed,Small
+C0269,Commercial Kitchen Repair,Northeast,Local Independent,Routine Replenishment,Small
+C0270,Plumbing Contractor,Southeast,Local Independent,Routine Replenishment,Small
+C0271,Appliance Repair,Southwest,Local Independent,Mixed,Small
+C0272,HVAC Contractor,West,Local Independent,Routine Replenishment,Small
+C0273,HVAC Contractor,Northeast,Local Independent,Routine Replenishment,Small
+C0274,Pool/Spa Service,Southwest,Regional Chain,Routine Replenishment,Mid-Market
+C0275,Plumbing Contractor,West,Local Independent,Emergency Repair,Small
+C0276,Plumbing Contractor,West,Regional Chain,Routine Replenishment,Mid-Market
+C0277,Plumbing Contractor,Midwest,Local Independent,Emergency Repair,Small
+C0278,Commercial Kitchen Repair,Northeast,Local Independent,Emergency Repair,Small
+C0279,HVAC Contractor,Southeast,Regional Chain,Mixed,Mid-Market
+C0280,HVAC Contractor,West,Regional Chain,Routine Replenishment,Mid-Market
+C0281,Appliance Repair,West,Local Independent,Routine Replenishment,Small
+C0282,Plumbing Contractor,Southwest,Regional Chain,Routine Replenishment,Mid-Market
+C0283,Commercial Kitchen Repair,Northeast,Local Independent,Routine Replenishment,Small
+C0284,Plumbing Contractor,Northeast,Local Independent,Routine Replenishment,Small
+C0285,Plumbing Contractor,Midwest,National Account,Mixed,Large
+C0286,Pool/Spa Service,Midwest,Local Independent,Mixed,Small
+C0287,HVAC Contractor,Northeast,Regional Chain,Routine Replenishment,Mid-Market
+C0288,Plumbing Contractor,Southwest,Local Independent,Routine Replenishment,Small
+C0289,Plumbing Contractor,Midwest,Regional Chain,Routine Replenishment,Mid-Market
+C0290,Plumbing Contractor,Northeast,Local Independent,Routine Replenishment,Small
+C0291,Pool/Spa Service,Northeast,Local Independent,Routine Replenishment,Small
+C0292,Appliance Repair,Midwest,Local Independent,Mixed,Small
+C0293,Pool/Spa Service,Southwest,Local Independent,Routine Replenishment,Small
+C0294,Appliance Repair,West,Local Independent,Routine Replenishment,Small
+C0295,Plumbing Contractor,Midwest,Local Independent,Routine Replenishment,Small
+C0296,Plumbing Contractor,Southeast,Local Independent,Routine Replenishment,Small
+C0297,Pool/Spa Service,West,Local Independent,Emergency Repair,Small
+C0298,Plumbing Contractor,Midwest,Local Independent,Emergency Repair,Small
+C0299,Appliance Repair,Southeast,Regional Chain,Mixed,Mid-Market
+C0300,HVAC Contractor,Midwest,Local Independent,Routine Replenishment,Small
+C0301,Appliance Repair,Northeast,Regional Chain,Emergency Repair,Mid-Market
+C0302,Pool/Spa Service,Southeast,Local Independent,Routine Replenishment,Small
+C0303,HVAC Contractor,Midwest,Regional Chain,Mixed,Mid-Market
+C0304,Pool/Spa Service,West,Local Independent,Emergency Repair,Small
+C0305,Plumbing Contractor,Southwest,Local Independent,Mixed,Small
+C0306,HVAC Contractor,Southwest,Local Independent,Mixed,Small
+C0307,Appliance Repair,Midwest,Local Independent,Routine Replenishment,Small
+C0308,Plumbing Contractor,Northeast,Local Independent,Mixed,Small
+C0309,Appliance Repair,Southeast,Local Independent,Emergency Repair,Small
+C0310,HVAC Contractor,West,National Account,Mixed,Large
+C0311,Commercial Kitchen Repair,Northeast,Local Independent,Routine Replenishment,Small
+C0312,Commercial Kitchen Repair,West,Local Independent,Mixed,Small
+C0313,HVAC Contractor,Southwest,National Account,Routine Replenishment,Large
+C0314,Appliance Repair,Southeast,Local Independent,Emergency Repair,Small
+C0315,Appliance Repair,Southwest,Local Independent,Emergency Repair,Small
+C0316,Commercial Kitchen Repair,West,Regional Chain,Mixed,Mid-Market
+C0317,Commercial Kitchen Repair,Northeast,Regional Chain,Routine Replenishment,Mid-Market
+C0318,Commercial Kitchen Repair,Northeast,Local Independent,Emergency Repair,Small
+C0319,Pool/Spa Service,Southwest,Local Independent,Mixed,Small
+C0320,Commercial Kitchen Repair,West,Local Independent,Mixed,Small
+C0321,Appliance Repair,Northeast,Local Independent,Routine Replenishment,Small
+C0322,HVAC Contractor,Southwest,Local Independent,Routine Replenishment,Small
+C0323,Commercial Kitchen Repair,Northeast,Local Independent,Emergency Repair,Small
+C0324,Pool/Spa Service,Southwest,Local Independent,Mixed,Small
+C0325,Pool/Spa Service,Southwest,Regional Chain,Routine Replenishment,Mid-Market
+C0326,Appliance Repair,Northeast,Local Independent,Mixed,Small
+C0327,Appliance Repair,Southwest,Local Independent,Routine Replenishment,Small
+C0328,HVAC Contractor,West,Local Independent,Routine Replenishment,Small
+C0329,HVAC Contractor,West,Regional Chain,Emergency Repair,Mid-Market
+C0330,Plumbing Contractor,Northeast,Local Independent,Emergency Repair,Small
+C0331,Plumbing Contractor,Southeast,Local Independent,Mixed,Small
+C0332,Appliance Repair,Southeast,Local Independent,Routine Replenishment,Small
+C0333,Appliance Repair,Midwest,Local Independent,Routine Replenishment,Small
+C0334,Pool/Spa Service,Northeast,Local Independent,Mixed,Small
+C0335,Plumbing Contractor,West,Regional Chain,Mixed,Mid-Market
+C0336,Pool/Spa Service,Southwest,Local Independent,Mixed,Small
+C0337,Pool/Spa Service,West,Regional Chain,Emergency Repair,Mid-Market
+C0338,Appliance Repair,Northeast,National Account,Routine Replenishment,Large
+C0339,Appliance Repair,Northeast,Local Independent,Mixed,Small
+C0340,Pool/Spa Service,West,Local Independent,Routine Replenishment,Small
+C0341,Commercial Kitchen Repair,Southeast,Local Independent,Emergency Repair,Small
+C0342,Appliance Repair,Southwest,Regional Chain,Mixed,Mid-Market
+C0343,Commercial Kitchen Repair,West,Local Independent,Routine Replenishment,Small
+C0344,Plumbing Contractor,Northeast,Local Independent,Routine Replenishment,Small
+C0345,Pool/Spa Service,Northeast,Local Independent,Mixed,Small
+C0346,Appliance Repair,Northeast,Regional Chain,Routine Replenishment,Mid-Market
+C0347,Pool/Spa Service,Northeast,Local Independent,Routine Replenishment,Small
+C0348,Pool/Spa Service,Northeast,Local Independent,Routine Replenishment,Small
+C0349,HVAC Contractor,West,Local Independent,Routine Replenishment,Small
+C0350,HVAC Contractor,Southwest,National Account,Emergency Repair,Large
+C0351,Plumbing Contractor,West,Local Independent,Mixed,Small
+C0352,HVAC Contractor,West,Local Independent,Mixed,Small
+C0353,Appliance Repair,West,Regional Chain,Emergency Repair,Mid-Market
+C0354,Plumbing Contractor,Southeast,Regional Chain,Routine Replenishment,Mid-Market
+C0355,Pool/Spa Service,Southeast,Local Independent,Mixed,Small
+C0356,Pool/Spa Service,West,Local Independent,Emergency Repair,Small
+C0357,HVAC Contractor,Southeast,Regional Chain,Routine Replenishment,Mid-Market
+C0358,Pool/Spa Service,Northeast,Regional Chain,Routine Replenishment,Mid-Market
+C0359,HVAC Contractor,Southwest,Local Independent,Mixed,Small
+C0360,Commercial Kitchen Repair,West,Local Independent,Emergency Repair,Small
+C0361,Pool/Spa Service,West,Regional Chain,Mixed,Mid-Market
+C0362,Pool/Spa Service,West,Regional Chain,Routine Replenishment,Mid-Market
+C0363,Appliance Repair,Northeast,Regional Chain,Routine Replenishment,Mid-Market
+C0364,Pool/Spa Service,Southwest,Local Independent,Emergency Repair,Small
+C0365,HVAC Contractor,West,Local Independent,Routine Replenishment,Small
+C0366,Plumbing Contractor,Southwest,Regional Chain,Routine Replenishment,Mid-Market
+C0367,Plumbing Contractor,West,Regional Chain,Emergency Repair,Mid-Market
+C0368,Appliance Repair,West,Regional Chain,Emergency Repair,Mid-Market
+C0369,HVAC Contractor,Midwest,Local Independent,Emergency Repair,Small
+C0370,Commercial Kitchen Repair,Northeast,Local Independent,Routine Replenishment,Small
+C0371,Appliance Repair,Midwest,Regional Chain,Emergency Repair,Mid-Market
+C0372,Commercial Kitchen Repair,Southeast,Local Independent,Mixed,Small
+C0373,Plumbing Contractor,Northeast,National Account,Routine Replenishment,Large
+C0374,Appliance Repair,Northeast,Local Independent,Mixed,Small
+C0375,Pool/Spa Service,Southwest,Local Independent,Mixed,Small
+C0376,HVAC Contractor,Midwest,Regional Chain,Emergency Repair,Mid-Market
+C0377,Commercial Kitchen Repair,Midwest,Local Independent,Mixed,Small
+C0378,Commercial Kitchen Repair,Southwest,Local Independent,Mixed,Small
+C0379,Appliance Repair,Midwest,Local Independent,Routine Replenishment,Small
+C0380,Appliance Repair,Southwest,Local Independent,Routine Replenishment,Small
+C0381,HVAC Contractor,Northeast,Local Independent,Routine Replenishment,Small
+C0382,Pool/Spa Service,West,Local Independent,Emergency Repair,Small
+C0383,Pool/Spa Service,Midwest,Regional Chain,Routine Replenishment,Mid-Market
+C0384,Appliance Repair,Northeast,Local Independent,Mixed,Small
+C0385,HVAC Contractor,West,Local Independent,Mixed,Small
+C0386,HVAC Contractor,Southwest,Local Independent,Emergency Repair,Small
+C0387,HVAC Contractor,Northeast,Local Independent,Mixed,Small
+C0388,Pool/Spa Service,Northeast,Local Independent,Routine Replenishment,Small
+C0389,Pool/Spa Service,Northeast,Local Independent,Mixed,Small
+C0390,HVAC Contractor,Southeast,Local Independent,Emergency Repair,Small
+C0391,Commercial Kitchen Repair,Northeast,Local Independent,Mixed,Small
+C0392,HVAC Contractor,Southwest,National Account,Mixed,Large
+C0393,Appliance Repair,Midwest,Local Independent,Emergency Repair,Small
+C0394,Plumbing Contractor,West,Local Independent,Emergency Repair,Small
+C0395,Commercial Kitchen Repair,Southwest,Regional Chain,Mixed,Mid-Market
+C0396,Pool/Spa Service,Southwest,Regional Chain,Emergency Repair,Mid-Market
+C0397,HVAC Contractor,Midwest,Local Independent,Routine Replenishment,Small
+C0398,HVAC Contractor,Northeast,Local Independent,Mixed,Small
+C0399,Appliance Repair,Northeast,Local Independent,Routine Replenishment,Small
+C0400,Appliance Repair,Southwest,Local Independent,Routine Replenishment,Small
+C0401,Pool/Spa Service,Northeast,Local Independent,Routine Replenishment,Small
+C0402,Commercial Kitchen Repair,Northeast,Local Independent,Emergency Repair,Small
+C0403,Appliance Repair,Southeast,Local Independent,Mixed,Small
+C0404,Pool/Spa Service,West,Local Independent,Routine Replenishment,Small
+C0405,Plumbing Contractor,Midwest,National Account,Emergency Repair,Large
+C0406,Plumbing Contractor,Southwest,Local Independent,Emergency Repair,Small
+C0407,Plumbing Contractor,Midwest,Local Independent,Mixed,Small
+C0408,HVAC Contractor,Northeast,Local Independent,Emergency Repair,Small
+C0409,Pool/Spa Service,Southeast,Local Independent,Mixed,Small
+C0410,HVAC Contractor,Northeast,Local Independent,Mixed,Small
+C0411,HVAC Contractor,Southwest,Regional Chain,Mixed,Mid-Market
+C0412,Appliance Repair,Northeast,Regional Chain,Mixed,Mid-Market
+C0413,Appliance Repair,Southeast,Regional Chain,Mixed,Mid-Market
+C0414,HVAC Contractor,West,National Account,Mixed,Large
+C0415,HVAC Contractor,Midwest,National Account,Emergency Repair,Large
+C0416,Commercial Kitchen Repair,Midwest,National Account,Mixed,Large
+C0417,Pool/Spa Service,Midwest,Local Independent,Routine Replenishment,Small
+C0418,HVAC Contractor,Southwest,Local Independent,Routine Replenishment,Small
+C0419,Appliance Repair,Southeast,Local Independent,Mixed,Small
+C0420,Plumbing Contractor,Southwest,Local Independent,Mixed,Small
+C0421,Pool/Spa Service,West,Local Independent,Mixed,Small
+C0422,Commercial Kitchen Repair,Midwest,Regional Chain,Routine Replenishment,Mid-Market
+C0423,Commercial Kitchen Repair,Midwest,Local Independent,Routine Replenishment,Small
+C0424,Plumbing Contractor,Northeast,Local Independent,Routine Replenishment,Small
+C0425,Plumbing Contractor,Southeast,Local Independent,Routine Replenishment,Small
+C0426,HVAC Contractor,West,Local Independent,Routine Replenishment,Small
+C0427,Pool/Spa Service,Midwest,Local Independent,Emergency Repair,Small
+C0428,Pool/Spa Service,Southeast,Regional Chain,Emergency Repair,Mid-Market
+C0429,HVAC Contractor,Midwest,Local Independent,Mixed,Small
+C0430,Commercial Kitchen Repair,Midwest,Regional Chain,Routine Replenishment,Mid-Market
+C0431,HVAC Contractor,Midwest,Local Independent,Mixed,Small
+C0432,Commercial Kitchen Repair,Southwest,Local Independent,Routine Replenishment,Small
+C0433,Pool/Spa Service,Southeast,Local Independent,Emergency Repair,Small
+C0434,HVAC Contractor,Southwest,Regional Chain,Emergency Repair,Mid-Market
+C0435,Plumbing Contractor,Midwest,Regional Chain,Emergency Repair,Mid-Market
+C0436,HVAC Contractor,West,Local Independent,Mixed,Small
+C0437,Plumbing Contractor,Northeast,National Account,Emergency Repair,Large
+C0438,Pool/Spa Service,Northeast,Local Independent,Routine Replenishment,Small
+C0439,HVAC Contractor,Midwest,Regional Chain,Mixed,Mid-Market
+C0440,Appliance Repair,Midwest,Local Independent,Mixed,Small
+C0441,Pool/Spa Service,Southwest,Local Independent,Emergency Repair,Small
+C0442,Appliance Repair,Midwest,Regional Chain,Emergency Repair,Mid-Market
+C0443,HVAC Contractor,West,Local Independent,Emergency Repair,Small
+C0444,Plumbing Contractor,Midwest,Local Independent,Emergency Repair,Small
+C0445,Plumbing Contractor,Northeast,Local Independent,Emergency Repair,Small
+C0446,Commercial Kitchen Repair,Northeast,Local Independent,Routine Replenishment,Small
+C0447,Appliance Repair,West,Local Independent,Mixed,Small
+C0448,Pool/Spa Service,Northeast,Regional Chain,Routine Replenishment,Mid-Market
+C0449,Plumbing Contractor,West,Regional Chain,Routine Replenishment,Mid-Market
+C0450,Appliance Repair,Southeast,Local Independent,Emergency Repair,Small
+C0451,Pool/Spa Service,Northeast,Local Independent,Mixed,Small
+C0452,Pool/Spa Service,Southeast,Local Independent,Routine Replenishment,Small
+C0453,Plumbing Contractor,Southwest,Local Independent,Mixed,Small
+C0454,HVAC Contractor,Midwest,Local Independent,Mixed,Small
+C0455,Plumbing Contractor,Southwest,National Account,Routine Replenishment,Large
+C0456,Plumbing Contractor,Southwest,Regional Chain,Emergency Repair,Mid-Market
+C0457,HVAC Contractor,Midwest,Regional Chain,Emergency Repair,Mid-Market
+C0458,Commercial Kitchen Repair,Southwest,Local Independent,Routine Replenishment,Small
+C0459,Pool/Spa Service,West,Local Independent,Mixed,Small
+C0460,HVAC Contractor,Midwest,Local Independent,Routine Replenishment,Small
+C0461,Commercial Kitchen Repair,Northeast,Local Independent,Mixed,Small
+C0462,HVAC Contractor,Midwest,Local Independent,Routine Replenishment,Small
+C0463,Commercial Kitchen Repair,West,Local Independent,Emergency Repair,Small
+C0464,Plumbing Contractor,Southeast,Local Independent,Routine Replenishment,Small
+C0465,HVAC Contractor,West,National Account,Mixed,Large
+C0466,Pool/Spa Service,Midwest,Local Independent,Mixed,Small
+C0467,HVAC Contractor,Southwest,National Account,Routine Replenishment,Large
+C0468,Plumbing Contractor,Southeast,Local Independent,Emergency Repair,Small
+C0469,HVAC Contractor,West,Local Independent,Mixed,Small
+C0470,Pool/Spa Service,Northeast,Local Independent,Emergency Repair,Small
+C0471,Commercial Kitchen Repair,Southeast,Local Independent,Mixed,Small
+C0472,Pool/Spa Service,Midwest,Local Independent,Emergency Repair,Small
+C0473,Plumbing Contractor,Midwest,Local Independent,Emergency Repair,Small
+C0474,Plumbing Contractor,Midwest,Regional Chain,Routine Replenishment,Mid-Market
+C0475,Commercial Kitchen Repair,Northeast,Local Independent,Routine Replenishment,Small
+C0476,Commercial Kitchen Repair,Southeast,Local Independent,Routine Replenishment,Small
+C0477,Pool/Spa Service,Northeast,Local Independent,Routine Replenishment,Small
+C0478,HVAC Contractor,Midwest,Local Independent,Mixed,Small
+C0479,Commercial Kitchen Repair,Southeast,Local Independent,Routine Replenishment,Small
+C0480,HVAC Contractor,Midwest,Local Independent,Routine Replenishment,Small
+C0481,Appliance Repair,Midwest,National Account,Routine Replenishment,Large
+C0482,Pool/Spa Service,Southwest,Regional Chain,Emergency Repair,Mid-Market
+C0483,Appliance Repair,Midwest,Regional Chain,Routine Replenishment,Mid-Market
+C0484,Commercial Kitchen Repair,Southwest,Local Independent,Emergency Repair,Small
+C0485,Plumbing Contractor,Midwest,Local Independent,Routine Replenishment,Small
+C0486,Appliance Repair,Southwest,Regional Chain,Emergency Repair,Mid-Market
+C0487,Appliance Repair,Southwest,Local Independent,Mixed,Small
+C0488,Plumbing Contractor,Southeast,Local Independent,Routine Replenishment,Small
+C0489,Commercial Kitchen Repair,Southeast,Local Independent,Mixed,Small
+C0490,Commercial Kitchen Repair,Southwest,Regional Chain,Routine Replenishment,Mid-Market
+C0491,Pool/Spa Service,Southeast,Local Independent,Emergency Repair,Small
+C0492,Pool/Spa Service,Midwest,Regional Chain,Mixed,Mid-Market
+C0493,Commercial Kitchen Repair,Northeast,Regional Chain,Routine Replenishment,Mid-Market
+C0494,Commercial Kitchen Repair,Midwest,Local Independent,Mixed,Small
+C0495,Appliance Repair,Midwest,Regional Chain,Routine Replenishment,Mid-Market
+C0496,Plumbing Contractor,Southwest,Local Independent,Routine Replenishment,Small
+C0497,HVAC Contractor,Midwest,Local Independent,Mixed,Small
+C0498,Appliance Repair,Southeast,Local Independent,Routine Replenishment,Small
+C0499,Pool/Spa Service,West,National Account,Routine Replenishment,Large
+C0500,Plumbing Contractor,Midwest,Local Independent,Mixed,Small

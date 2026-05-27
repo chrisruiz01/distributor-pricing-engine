@@ -1,47 +1,64 @@
+from pathlib import Path
+
 import pandas as pd
 from sqlalchemy import text
 
 from config import get_engine
 
 
-def load_transactions() -> pd.DataFrame:
-    query = text("""
-        SELECT
-            transaction_id,
-            invoice_date,
-            customer_id,
-            sku,
-            branch_id,
-            sales_rep_id,
-            industry,
-            region,
-            customer_type,
-            service_model,
-            annual_revenue_band,
-            product_category,
-            unit_cost,
-            list_price,
-            criticality,
-            quantity,
-            standard_discount_pct,
-            exception_flag,
-            override_discount_pct,
-            invoice_price,
-            rebate_pct,
-            freight_cost,
-            gross_revenue,
-            gross_margin_dollars,
-            rebate_dollars,
-            pocket_margin_dollars,
-            pocket_margin_pct
-        FROM transactions
-    """)
+DATA_DIR = Path(__file__).resolve().parents[1] / "data"
+TRANSACTIONS_CSV = DATA_DIR / "transactions.csv"
 
+
+def load_transactions_from_csv() -> pd.DataFrame:
+    """Load synthetic transaction data from the local CSV file."""
+    return pd.read_csv(TRANSACTIONS_CSV, parse_dates=["invoice_date"])
+
+
+def load_transactions_from_db() -> pd.DataFrame:
+    """Load transaction data from PostgreSQL."""
     engine = get_engine()
 
-    with engine.connect() as connection:
-        df = pd.read_sql(query, connection)
+    query = text("""
+        SELECT
+            t.transaction_id,
+            t.invoice_date,
+            t.customer_id,
+            c.industry,
+            c.region,
+            c.customer_type,
+            t.product_id,
+            p.product_category,
+            p.product_name,
+            t.quantity,
+            t.list_price,
+            t.invoice_price,
+            t.unit_cost,
+            t.standard_discount_pct,
+            t.override_discount_pct,
+            t.rebate_pct,
+            t.freight_cost,
+            t.service_cost,
+            t.exception_flag,
+            t.order_channel,
+            t.service_model,
+            t.freight_terms,
+            t.contract_flag
+        FROM transactions t
+        LEFT JOIN customers c
+            ON t.customer_id = c.customer_id
+        LEFT JOIN products p
+            ON t.product_id = p.product_id
+    """)
 
-    df["invoice_date"] = pd.to_datetime(df["invoice_date"])
+    return pd.read_sql(query, engine)
 
-    return df
+
+def load_transactions() -> pd.DataFrame:
+    """
+    Load synthetic transaction data from CSV.
+
+    The portfolio app uses repo-contained synthetic data so it can run locally
+    and on Streamlit Cloud without database credentials.
+    """
+    return load_transactions_from_csv()
