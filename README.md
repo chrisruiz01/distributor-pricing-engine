@@ -2,6 +2,10 @@
 
 Synthetic B2B distributor pricing analytics project built to mimic strategic pricing work in a complex distribution environment. 
 
+## Live App
+
+[Open the deployed Streamlit app](https://distributor-pricing-engine.streamlit.app/)
+
 ## MVP Scope
 
 This project models invoice-level pricing performance across customers, SKUs, branches, reps, discounts, rebates, freight, and product cost. 
