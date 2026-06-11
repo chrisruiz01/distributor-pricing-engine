@@ -7,6 +7,8 @@ from data_access import load_transactions
 from utils import format_currency, format_pct
 from pricing_logic import recommend_action, product_action, infer_wtp_signal
 
+import anthropic
+
 
 st.set_page_config(
     page_title="Distributor Pricing Engine",
@@ -92,6 +94,69 @@ avg_pocket_margin_pct = pocket_margin / total_revenue if total_revenue else 0
 exception_rate = filtered["exception_flag"].mean()
 avg_override_discount = filtered["override_discount_pct"].mean()
 
+# Pre-compute aggregates used by AI commentary and charts below
+category_summary = (
+    filtered.groupby("product_category", as_index=False)
+    .agg(
+        revenue=("gross_revenue", "sum"),
+        pocket_margin=("pocket_margin_dollars", "sum"),
+    )
+)
+category_summary["pocket_margin_pct"] = (
+    category_summary["pocket_margin"] / category_summary["revenue"]
+)
+category_summary = category_summary.sort_values("pocket_margin_pct").copy()
+category_summary["pocket_margin_label"] = category_summary["pocket_margin_pct"].map(
+    lambda x: f"{x:.1%}"
+)
+
+region_summary = (
+    filtered.groupby("region", as_index=False)
+    .agg(
+        transactions=("transaction_id", "count"),
+        exception_rate=("exception_flag", "mean"),
+        avg_override_discount=("override_discount_pct", "mean"),
+    )
+)
+region_summary = region_summary.sort_values("exception_rate", ascending=False).copy()
+region_summary["exception_rate_label"] = region_summary["exception_rate"].map(
+    lambda x: f"{x:.1%}"
+)
+
+customer_summary = (
+    filtered.groupby(
+        ["customer_id", "industry", "region", "customer_type"],
+        as_index=False,
+    )
+    .agg(
+        revenue=("gross_revenue", "sum"),
+        pocket_margin=("pocket_margin_dollars", "sum"),
+        transactions=("transaction_id", "count"),
+        exception_rate=("exception_flag", "mean"),
+        avg_override_discount=("override_discount_pct", "mean"),
+    )
+)
+customer_summary["pocket_margin_pct"] = (
+    customer_summary["pocket_margin"] / customer_summary["revenue"]
+)
+peer_benchmark = (
+    customer_summary.groupby(["industry", "customer_type"], as_index=False)
+    .agg(peer_pocket_margin_pct=("pocket_margin_pct", "median"))
+)
+customer_summary = customer_summary.merge(
+    peer_benchmark, on=["industry", "customer_type"], how="left"
+)
+customer_summary["margin_gap_to_peer"] = (
+    customer_summary["peer_pocket_margin_pct"] - customer_summary["pocket_margin_pct"]
+)
+customer_summary["estimated_margin_leakage"] = (
+    customer_summary["margin_gap_to_peer"].clip(lower=0) * customer_summary["revenue"]
+)
+leakage_candidates = customer_summary.sort_values(
+    "estimated_margin_leakage", ascending=False
+).head(25)
+
+
 st.subheader("Executive Summary")
 st.caption(f"Period: {start_date} to {end_date}")
 
@@ -175,26 +240,78 @@ st.success("\n\n".join(priority_items))
 
 st.divider()
 
+st.subheader("AI Variance Commentary")
+st.caption("Generate an executive-ready narrative from the current filtered view.")
+
+if st.button("Generate Commentary", type="primary"):
+    # Build the aggregates payload — no raw data sent, only computed summaries
+    category_payload = (
+        category_summary[["product_category", "pocket_margin_pct", "revenue"]]
+        .sort_values("pocket_margin_pct")
+        .head(3)
+        .to_dict(orient="records")
+    )
+
+    region_payload = (
+        region_summary[["region", "exception_rate", "avg_override_discount"]]
+        .sort_values("exception_rate", ascending=False)
+        .head(3)
+        .to_dict(orient="records")
+    )
+
+    leakage_payload = (
+        leakage_candidates[["customer_id", "industry", "estimated_margin_leakage", "margin_gap_to_peer"]]
+        .head(5)
+        .to_dict(orient="records")
+    )
+
+    prompt = f"""You are a pricing analyst writing an executive summary for a B2B distributor leadership team.
+
+Write a concise, professional variance commentary (3-4 paragraphs) based on the following computed metrics.
+Use specific numbers. Lead with the most important finding. Do not use bullet points.
+
+PERIOD: {start_date} to {end_date}
+
+PORTFOLIO METRICS:
+- Total Revenue: ${total_revenue:,.0f}
+- Gross Margin: ${gross_margin:,.0f}
+- Pocket Margin: ${pocket_margin:,.0f} ({avg_pocket_margin_pct:.1%} of revenue)
+- Exception Rate: {exception_rate:.1%}
+- Average Override Discount: {avg_override_discount:.1%}
+
+LOWEST POCKET MARGIN CATEGORIES (top 3):
+{category_payload}
+
+HIGHEST EXCEPTION RATE REGIONS (top 3):
+{region_payload}
+
+TOP MARGIN LEAKAGE ACCOUNTS (top 5):
+{leakage_payload}
+
+Write the commentary now. Do not include a title or heading.
+"""
+
+    try:
+        ai_client = anthropic.Anthropic(api_key=st.secrets["ANTHROPIC_API_KEY"])
+        with st.spinner("Generating commentary..."):
+            response = ai_client.messages.create(
+                model="claude-haiku-4-5-20251001",
+                max_tokens=600,
+                messages=[{"role": "user", "content": prompt}],
+            )
+        commentary = response.content[0].text
+        st.markdown(commentary)
+
+    except anthropic.APIError as e:
+        st.error(f"API error: {str(e)}")
+
+
+st.divider()
+
 left, right = st.columns(2)
 
 with left:
     st.subheader("Pocket Margin by Product Category")
-
-    category_summary = (
-        filtered.groupby("product_category", as_index=False)
-        .agg(
-            revenue=("gross_revenue", "sum"),
-            pocket_margin=("pocket_margin_dollars", "sum"),
-        )
-    )
-    category_summary["pocket_margin_pct"] = (
-        category_summary["pocket_margin"] / category_summary["revenue"]
-    )
-
-    category_summary = category_summary.sort_values("pocket_margin_pct").copy()
-    category_summary["pocket_margin_label"] = category_summary["pocket_margin_pct"].map(
-        lambda x: f"{x:.1%}"
-    )
 
     fig = px.bar(
         category_summary,
@@ -211,20 +328,6 @@ with left:
 
 with right:
     st.subheader("Exception Rate by Region")
-
-    region_summary = (
-        filtered.groupby("region", as_index=False)
-        .agg(
-            transactions=("transaction_id", "count"),
-            exception_rate=("exception_flag", "mean"),
-            avg_override_discount=("override_discount_pct", "mean"),
-        )
-    )
-
-    region_summary = region_summary.sort_values("exception_rate", ascending=False).copy()
-    region_summary["exception_rate_label"] = region_summary["exception_rate"].map(
-        lambda x: f"{x:.1%}"
-    )
 
     fig = px.bar(
         region_summary,
@@ -269,50 +372,6 @@ with st.expander("Definitions for leakage table"):
         Number of invoice lines for the customer in the filtered period.
         """
     )
-
-customer_summary = (
-    filtered.groupby(
-        ["customer_id", "industry", "region", "customer_type"],
-        as_index=False,
-    )
-    .agg(
-        revenue=("gross_revenue", "sum"),
-        pocket_margin=("pocket_margin_dollars", "sum"),
-        transactions=("transaction_id", "count"),
-        exception_rate=("exception_flag", "mean"),
-        avg_override_discount=("override_discount_pct", "mean"),
-    )
-)
-
-customer_summary["pocket_margin_pct"] = (
-    customer_summary["pocket_margin"] / customer_summary["revenue"]
-)
-
-peer_benchmark = (
-    customer_summary.groupby(["industry", "customer_type"], as_index=False)
-    .agg(peer_pocket_margin_pct=("pocket_margin_pct", "median"))
-)
-
-customer_summary = customer_summary.merge(
-    peer_benchmark,
-    on=["industry", "customer_type"],
-    how="left",
-)
-
-customer_summary["margin_gap_to_peer"] = (
-     customer_summary["peer_pocket_margin_pct"]
-    - customer_summary["pocket_margin_pct"]
-)
-
-customer_summary["estimated_margin_leakage"] = (
-    customer_summary["margin_gap_to_peer"].clip(lower=0)
-    * customer_summary["revenue"]
-)
-
-leakage_candidates = customer_summary.sort_values(
-    "estimated_margin_leakage",
-    ascending=False,
-).head(25)
 
 display_cols = [
     "customer_id",
